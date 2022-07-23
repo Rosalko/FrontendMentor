@@ -1,0 +1,90 @@
+#root {
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+.refresh-button {
+  border-radius: 50%;
+  aspect-ratio: 1;
+  background-color: hsl(150, 100%, 66%);
+  height: 3rem;
+  border: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.refresh-button--icon {
+  padding: 0;
+  object-fit: contain;
+  width: 50%;
+  aspect-ratio: 1;
+  margin: 0;
+}
+
+.container {
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 3%;
+  width: 30rem;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  box-shadow: 0 0 5px 0 hsl(218, 23%, 16%);
+}
+
+.advice-quote {
+  font-weight: 800;
+  font-size: 28px;
+  flex-grow: 2;
+}
+
+.advice-id {
+  color: hsl(150, 100%, 66%);
+  font-weight: 200;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container {
+  position: relative;
+  bottom: -3.5rem;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.refresh-button:hover {
+  box-shadow: 0 0 25px 3px hsl(150, 100%, 66%) ;
+}
+
+.divisor_mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 20rem;
+  }
+  .divisor_mobile {
+    display: flex;
+  }
+  .divisor_desktop {
+    display: none;
+  }
+}
