@@ -1,0 +1,115 @@
+html, body {
+    --white: hsl(0, 0%, 100%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --cream: hsl(30, 38%, 92%);
+    --darkCyan: hsl(158, 36%, 37%)
+}
+
+body {
+    background-color: var(--cream);
+    min-height: 100vh;
+    margin: 0;
+    font-family: Montserrat, "Comic Sans MS", serif;
+    color: var(--darkGrayishBlue);
+    padding: 2rem 1rem;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+
+
+}
+
+.product-card {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    background-color: var(--white);
+    overflow: hidden;
+    box-shadow: var(--darkGrayishBlue);
+}
+
+.product-image-container {
+    height: 25%;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.product-current-price {
+    font-family: Fraunces, serif;
+}
+
+.product-content {
+    padding: 0.5rem 1rem;
+}
+
+.product-category {
+    color: var(--darkGrayishBlue);
+    font-size: 0.75rem;
+    letter-spacing: 0.25rem;
+}
+
+.product-current-price {
+    color: var(--darkCyan);
+    font-size: 2rem;
+    margin: 0;
+}
+
+.cart-button {
+    background-color: var(--darkCyan);
+    color: var(--white);
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    box-shadow: black;
+}
+
+.cart-button:hover{
+    cursor:pointer;
+    background-image:linear-gradient(45deg, rgba(0, 0, 0, 0.4) 0 0);
+    box-shadow: black;
+}
+
+.cart-button--text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
+    gap: 0.5rem;
+}
+
+.product-name{
+    color: black;
+    font-weight: 700;
+    font-family: Fraunces, sans-serif;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.prices-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.product-original-price {
+    text-decoration: line-through;
+}
+
+.product-image-desktop {
+    display: none;
+}
